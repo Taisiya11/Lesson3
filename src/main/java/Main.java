@@ -27,14 +27,15 @@ public class Main {
             life.playLife();
             life.getSumOfGenerations();
         }
-        while (life.analyzesField()==true);
-        System.out.println("Количество поколений: "+ life.getSumOfGenerations());
+        while (life.analyzesField() == true);
+        System.out.println("Количество поколений: " + life.getSumOfGenerations());
         life.displayField();
-
 
         /**
          * Игра камень/ножницы/бумага
          */
+        RockPaperScissors rockPaperScissors = new RockPaperScissors();
+        rockPaperScissors.playGame();
 
 
     }
