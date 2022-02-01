@@ -18,7 +18,7 @@ public enum TypeFurniture {
     public static String compareTypes(String typeCustomer) {
         TypeFurniture[] values = values();
         for (int i = 0; i < values.length; i++) {
-            if (values[i].type == typeCustomer) {
+            if (values[i].type.equals(typeCustomer)) {
                 ConstructorFurniture.type = values[i].type;
             }
         }
